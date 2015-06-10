@@ -2,7 +2,7 @@
 from cliff.command import Command
 from robobrowser import RoboBrowser
 from pyquery import PyQuery as pq
-from dateutil import datetime_parser
+from dateutil import parser as datetime_parser
 from time import sleep
 import os
 try:
