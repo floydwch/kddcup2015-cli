@@ -2,7 +2,7 @@
 from cliff.command import Command
 from robobrowser import RoboBrowser
 from pyquery import PyQuery as pq
-import dateutil
+from dateutil import datetime_parser
 from time import sleep
 import os
 try:
@@ -78,7 +78,7 @@ class Submit(Command):
         html = pq(html_str)
 
         times = list(map(
-            lambda x: dateutil.parser.parse(x.text),
+            lambda x: datetime_parser.parse(x.text),
             html('.td_result +td+td+td+td')))
 
         newest_index = times.index(max(times))
