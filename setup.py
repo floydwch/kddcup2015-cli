@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 PROJECT = 'kddcup2015-cli'
-VERSION = '0.1.2'
+VERSION = '0.1.3'
 
 from setuptools import setup, find_packages
 

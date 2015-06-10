@@ -83,5 +83,5 @@ class Submit(Command):
 
         newest_index = times.index(max(times))
 
-        score = html('.td_result')[newest_index].text.strip()
+        score = html('.td_result')[newest_index * 2].text.strip()
         self.app.stdout.write(score + '\n')
